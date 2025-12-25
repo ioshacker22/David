@@ -67,3 +67,43 @@ p {
 .coin:hover {
   transform: translateY(-10px);
 }
+
+.world {
+  scroll-margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.world:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Power-ups container */
+.power-ups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+/* Individual power-up */
+.power-up {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid #ffffff;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+/* Icon */
+.power-up .icon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* Label */
+.power-up .label {
+  font-size: 0.65rem;
+  line-height: 1.4;
+}
