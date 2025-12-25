@@ -20,3 +20,14 @@ powerUps.forEach(item => {
     sound.play();
   });
 });
+
+
+const pipes = document.querySelectorAll(".pipe");
+
+pipes.forEach(pipe => {
+  const sound = new Audio("assets/sounds/pipe.wav");
+
+  pipe.addEventListener("click", () => {
+    sound.play();
+  });
+});
