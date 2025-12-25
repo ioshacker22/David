@@ -34,3 +34,36 @@ p {
   font-size: 0.75rem;
   line-height: 1.8;
 }
+
+/* Ground tiles */
+.world::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: repeating-linear-gradient(
+    90deg,
+    #c68642 0px,
+    #c68642 32px,
+    #b87333 32px,
+    #b87333 64px
+  );
+}
+
+/* Coin */
+.coin {
+  width: 24px;
+  height: 24px;
+  margin: 2rem auto 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff4a3, #f7c600);
+  box-shadow: 0 0 0 2px #d49b00;
+  transition: transform 0.2s ease;
+}
+
+
+.coin:hover {
+  transform: translateY(-10px);
+}
