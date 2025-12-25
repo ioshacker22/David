@@ -8,14 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <section class="world world-1">
+  <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+  <section id="home" class="world world-1">
     <h1>World 1-1</h1>
     <p>Press start.</p>
     <div class="coin"></div>
   </section>
-
- <section class="world world-2">
+<section id="about" class="world world-2">
   <h2>World 1-2</h2>
   <p>Power-ups collected.</p>
 
@@ -29,43 +35,50 @@
       <span class="icon">🔥</span>
       <span class="label">Linux</span>
     </div>
-
     <div class="power-up">
       <span class="icon">⭐</span>
       <span class="label">Git & GitHub</span>
     </div>
-
     <div class="power-up">
       <span class="icon">🛡️</span>
       <span class="label">Problem Solving</span>
     </div>
   </div>
 </section>
- <section class="world world-3">
+<section id="projects" class="world world-3">
   <h2>World 1-3</h2>
   <p>Enter a pipe.</p>
-
   <div class="pipes">
     <a class="pipe" href="https://github.com/ioshacker22/2FA-authentication-" target="_blank">
       <span class="pipe-label">2FA App</span>
     </a>
-
     <a class="pipe" href="https://github.com/ioshacker22" target="_blank">
       <span class="pipe-label">More Projects</span>
     </a>
   </div>
 </section>
+ <section id="experience" class="world world-4">
+  <h2>World 1-4</h2>
+  <p>Something feels hidden here.</p>
 
+  <div class="mystery-zone">
+    <div class="block">?</div>
+    <div class="block">?</div>
+    <div class="block">?</div>
+  </div>
+</section>
+<section class="world world-castle">
+  <h2>🏰 Castle Reached</h2>
+  <p>You made it.</p>
 
-  <section class="world world-4">
-    <h2>World 1-4</h2>
-    <p>Experiments.</p>
-  </section>
+  <div class="castle-actions">
+    <a href="mailto: Davidadebambo22@gmail.com" class="flag">Contact Me</a>
+    <a href="https://github.com/ioshacker22" target="_blank" class="flag">View GitHub</a>
+  </div>
 
-  <section class="world world-castle">
-    <h2>Castle</h2>
-    <p>Thanks for playing.</p>
-  </section>
+  <p class="end-text">Thanks for playing.</p>
+</section>
+
 
   <script src="js/main.js"></script>
 </body>

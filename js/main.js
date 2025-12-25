@@ -31,3 +31,27 @@ pipes.forEach(pipe => {
     sound.play();
   });
 });
+
+
+const blocks = document.querySelectorAll(".block");
+
+blocks.forEach((block, index) => {
+  block.addEventListener("click", () => {
+    if (block.textContent === "?") {
+      block.textContent = ["WIP", "LAB", "IDEA"][index];
+    }
+  });
+});
+
+
+const castle = document.querySelector(".world-castle");
+const victorySound = new Audio("assets/sounds/victory.wav");
+
+let played = false;
+
+castle.addEventListener("mouseenter", () => {
+  if (!played) {
+    victorySound.play();
+    played = true;
+  }
+});
