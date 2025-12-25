@@ -1,0 +1,36 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: "Press Start 2P", monospace;
+  background-color: #5c94fc; /* Mario sky blue */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Each world = one screen */
+.world {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Headings */
+h1, h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraph text */
+p {
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
