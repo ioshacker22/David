@@ -9,6 +9,36 @@ coins.forEach(coin => {
   });
 });
 
+// Animate coin to move across screen
+coins.forEach(coin => {
+  let position = 0;
+  let direction = 1; // 1 = right, -1 = left
+  const speed = 2;
+  
+  function moveCoin() {
+    position += speed * direction;
+    
+    // Get the width of the viewport and coin
+    const maxPosition = window.innerWidth - coin.offsetWidth;
+    
+    // Reverse direction at edges
+    if (position >= maxPosition) {
+      position = maxPosition;
+      direction = -1;
+    } else if (position <= 0) {
+      position = 0;
+      direction = 1;
+    }
+    
+    coin.style.position = 'absolute';
+    coin.style.left = position + 'px';
+    
+    requestAnimationFrame(moveCoin);
+  }
+  
+  moveCoin();
+});
+
 
 const powerUps = document.querySelectorAll(".power-up");
 

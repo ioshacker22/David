@@ -17,56 +17,166 @@
   </ul>
 </nav>
   <section id="home" class="world world-1">
-    <h1>World 1-1</h1>
-    <p>Press start.</p>
+    <h1>Hi there,</h1>
+    <p>Welcome to David's bubble.</p>
     <div class="coin"></div>
   </section>
-<section id="about" class="world world-2">
-  <h2>World 1-2</h2>
-  <p>Power-ups collected.</p>
+<section id="about" class="about-section">
+  <div class="about-header">
+    <h2><span class="slash">/</span> about me</h2>
+    <div class="divider"></div>
+  </div>
 
-  <div class="power-ups">
-    <div class="power-up">
-      <span class="icon">🍄</span>
-      <span class="label">C / C++</span>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        I am a Computer Programming student at <strong>Seneca Polytechnic</strong>,
+        with a strong focus on systems programming, software engineering
+        fundamentals, and building practical, real-world applications.
+      </p>
+
+      <p>
+        I have experience working with low-level languages such as
+        <strong>C and C++</strong>, alongside Linux tooling, Git, and
+        problem-solving-driven development. I enjoy understanding how
+        things work under the hood and writing code that is efficient,
+        readable, and intentional.
+      </p>
+      <p class="about-subtitle">
+        Technologies I work with:
+      </p>
+      <ul class="tech-list">
+        <li>C / C++</li>
+        <li>Linux & Bash</li>
+        <li>Git & GitHub</li>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+
+      <p class="about-footer">
+        Outside of coding, I enjoy working out, playing chess,
+        and playing video games. 
+      </p>
     </div>
 
-    <div class="power-up">
-      <span class="icon">🔥</span>
-      <span class="label">Linux</span>
-    </div>
-    <div class="power-up">
-      <span class="icon">⭐</span>
-      <span class="label">Git & GitHub</span>
-    </div>
-    <div class="power-up">
-      <span class="icon">🛡️</span>
-      <span class="label">Problem Solving</span>
+    <div class="about-image">
+      <img src="assets/images/profile.jpg" alt="Profile photo" />
     </div>
   </div>
 </section>
-<section id="projects" class="world world-3">
-  <h2>World 1-3</h2>
-  <p>Enter a pipe.</p>
-  <div class="pipes">
-    <a class="pipe" href="https://github.com/ioshacker22/2FA-authentication-" target="_blank">
-      <span class="pipe-label">2FA App</span>
-    </a>
-    <a class="pipe" href="https://github.com/ioshacker22" target="_blank">
-      <span class="pipe-label">More Projects</span>
-    </a>
+<section id="experience" class="experience-section">
+  <div class="experience-header">
+    <h2><span class="slash">/</span> experience</h2>
+    <div class="divider"></div>
   </div>
-</section>
- <section id="experience" class="world world-4">
-  <h2>World 1-4</h2>
-  <p>Something feels hidden here.</p>
 
-  <div class="mystery-zone">
-    <div class="block">?</div>
-    <div class="block">?</div>
-    <div class="block">?</div>
+  <div class="experience-container">
+    <div class="experience-sidebar">
+      <button class="company-tab active" data-company="rogers">ROGERS / FIDO</button>
+      <button class="company-tab" data-company="affinity">AFFINITY GLOBAL</button>
+    </div>
+
+    <div class="experience-content">
+      <div class="job-panel active" data-company="rogers">
+        <h3 class="job-title">Customer Service Manager @ <span class="company-name">Rogers / Fido</span></h3>
+        <p class="job-date">Jan 2022 - Nov 2024</p>
+        <ul class="job-details">
+          <li>Managed 50+ daily escalations, improving customer satisfaction KPIs</li>
+          <li>Delivered Excel and Tableau performance dashboards to leadership</li>
+          <li>Conducted team briefings and coached staff on process updates and compliance</li>
+        </ul>
+      </div>
+
+      <div class="job-panel" data-company="affinity" style="display: none;">
+        <h3 class="job-title">Customer Service Team Leader @ <span class="company-name">Affinity Global</span></h3>
+        <p class="job-date">Jun 2019 - Jan 2022</p>
+        <ul class="job-details">
+          <li>Led and coached a team of 15-20 agents handling 100+ daily customer interactions</li>
+          <li>Monitored performance using CRM tools and conducted regular coaching sessions</li>
+          <li>Ensured adherence to privacy, security, and operational standards</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
+<section id="projects" class="projects-section">
+  <!-- Header -->
+  <div class="section-header">
+    <h2><span class="slash">/</span> pet projects</h2>
+    <div class="divider"></div>
+  </div>
+
+  <!-- Featured project -->
+  <div class="featured-project">
+    <div class="featured-overlay">
+      <h3 class="project-title">2FA Authentication App</h3>
+      <p class="project-desc">
+        A two-factor authentication system built from scratch, supporting
+        time-based one-time passwords (TOTP), QR code enrollment, and secure
+        token validation.
+      </p>
+      <span class="project-tech">
+        PYTHON · FLASK · SQL · AUTHENTICATION
+      </span>
+
+      <div class="project-links">
+        <a href="https://github.com/ioshacker22/2FA-authentication-" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project cards -->
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h4>Unix Shell (Custom Implementation)</h4>
+      <p>
+        A custom Unix shell written in C, implementing command parsing,
+        process creation, execution, and basic job control.
+      </p>
+      <span class="card-tech">C · Linux · Processes</span>
+    </div>
+
+    <div class="project-card">
+      <h4>Olympic Data Analysis Tool</h4>
+      <p>
+        A C program that analyzes Olympic datasets to determine athlete
+        participation based on event, year, and season.
+      </p>
+      <span class="card-tech">C · File I/O · Data Processing</span>
+    </div>
+
+    <div class="project-card">
+      <h4>Homework Management System</h4>
+      <p>
+        A web-based system designed to manage homework distribution and
+        tracking, featuring authentication and role-based access.
+      </p>
+      <span class="card-tech">Python · Flask · SQL</span>
+    </div>
+
+    <div class="project-card">
+      <h4>Linux & Bash Utilities</h4>
+      <p>
+        A collection of Bash scripts and command-line workflows focused on
+        file management, automation, and system inspection.
+      </p>
+      <span class="card-tech">Bash · Linux · Automation</span>
+    </div>
+
+    <div class="project-card">
+      <h4>Data Structures & Algorithms Practice</h4>
+      <p>
+        A growing collection of C and C++ implementations of core data
+        structures and algorithms, focusing on correctness and efficiency.
+      </p>
+      <span class="card-tech">C · C++ · Algorithms</span>
+    </div>
+
+  </div>
+</section>
+ 
 <section class="world world-castle">
   <h2>🏰 Castle Reached</h2>
   <p>You made it.</p>

@@ -8,7 +8,7 @@
 /* Global */
 body {
   font-family: "Press Start 2P", monospace;
-  background-color: #5c94fc; /* Mario sky blue */
+  background-color: #5c94fc;
   color: #ffffff;
   text-align: center;
 }
@@ -63,7 +63,6 @@ p {
   transition: transform 0.2s ease;
 }
 
-
 .coin:hover {
   transform: translateY(-10px);
 }
@@ -113,7 +112,6 @@ p {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-
 /* Pipes container */
 .pipes {
   display: flex;
@@ -161,7 +159,6 @@ p {
   transform: translateY(8px);
 }
 
-
 /* Mystery zone */
 .mystery-zone {
   display: flex;
@@ -185,12 +182,10 @@ p {
   transition: transform 0.15s ease, background-color 0.15s ease;
 }
 
-
 .block:hover {
   transform: translateY(-6px);
   background-color: #f7dc6f;
 }
-
 
 /* Castle world */
 .world-castle {
@@ -227,7 +222,6 @@ p {
   font-size: 0.55rem;
   opacity: 0.8;
 }
-
 
 /* Navigation bar */
 .navbar {
@@ -270,4 +264,355 @@ p {
 
 .nav-links a.active {
   color: #f7c600;
+}
+
+/* About section */
+.about-section {
+  padding: 6rem 10%;
+  background: linear-gradient(180deg, #081421, #06101c);
+  color: #cfd8e3;
+}
+
+/* Header */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e6edff;
+}
+
+.about-header .slash {
+  color: #8ab4ff;
+  margin-right: 0.3rem;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(to right, #22314a, transparent);
+}
+
+/* Content layout */
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Text */
+.about-text p {
+  font-size: 0.7rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  color: #b9c4d6;
+}
+
+.about-text strong {
+  color: #8ab4ff;
+  font-weight: 600;
+}
+
+/* Subtitle */
+.about-subtitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #e6edff;
+}
+
+/* Tech list */
+.tech-list {
+  list-style: none;
+  columns: 2;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.tech-list li {
+  font-size: 0.65rem;
+  margin-bottom: 0.6rem;
+  color: #9fb4d9;
+}
+
+/* Footer line */
+.about-footer {
+  font-size: 0.65rem;
+  opacity: 0.85;
+}
+
+/* Image */
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.card-tech {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.55rem;
+  letter-spacing: 0.05em;
+  color: #3ce6c0;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 6rem 10%;
+  background: linear-gradient(180deg, #5c94fc, #4a7dd8);
+  color: #ffffff;
+  scroll-margin-top: 70px;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.section-header .slash {
+  color: #f7c600;
+  margin-right: 0.3rem;
+}
+
+/* Featured Project */
+.featured-project {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.featured-project:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.featured-overlay {
+  text-align: left;
+}
+
+.project-title {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #f7c600;
+}
+
+.project-desc {
+  font-size: 0.7rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #e8f0ff;
+}
+
+.project-tech {
+  display: block;
+  font-size: 0.55rem;
+  letter-spacing: 0.05em;
+  color: #3ce6c0;
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.6rem;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Project Grid */
+.project-grid {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 4rem 5%;
+  }
+
+  .featured-project {
+    padding: 2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Experience Section */
+.experience-section {
+  padding: 6rem 10%;
+  background: linear-gradient(180deg, #0b1c2d, #081421);
+  color: #cfd8e3;
+  scroll-margin-top: 70px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.experience-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e6edff;
+  white-space: nowrap;
+}
+
+.experience-header .slash {
+  color: #8ab4ff;
+  margin-right: 0.3rem;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.experience-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 2px solid #22314a;
+}
+
+.company-tab {
+  padding: 1rem 1.5rem;
+  font-size: 0.65rem;
+  color: #7a8ba3;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 2px solid transparent;
+  margin-left: -2px;
+  font-family: "Press Start 2P", monospace;
+}
+
+.company-tab:hover {
+  color: #3ce6c0;
+  background: rgba(60, 230, 192, 0.05);
+}
+
+.company-tab.active {
+  color: #3ce6c0;
+  border-left: 2px solid #3ce6c0;
+  background: rgba(60, 230, 192, 0.05);
+}
+
+.experience-content {
+  min-height: 300px;
+}
+
+.job-title {
+  font-size: 0.9rem;
+  color: #e6edff;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.job-title .company-name {
+  color: #3ce6c0;
+}
+
+.job-date {
+  font-size: 0.6rem;
+  color: #7a8ba3;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.job-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.job-details li {
+  font-size: 0.65rem;
+  line-height: 1.8;
+  color: #9fb4d9;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.job-details li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #3ce6c0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .experience-sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    border-left: none;
+    border-bottom: 2px solid #22314a;
+  }
+
+  .company-tab {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    margin-left: 0;
+    margin-bottom: -2px;
+    white-space: nowrap;
+  }
+
+  .company-tab.active {
+    border-left: none;
+    border-bottom: 2px solid #3ce6c0;
+  }
 }
