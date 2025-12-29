@@ -210,11 +210,48 @@ p {
   color: #ffffff;
   font-size: 0.6rem;
   transition: transform 0.15s ease, background-color 0.15s ease;
+  position: relative;
 }
 
 .flag:hover {
   transform: translateY(-6px);
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Pointer for GitHub button */
+.flag.github-link::after {
+  content: "👈";
+  position: absolute;
+  right: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  animation: pointLeft 1s ease-in-out infinite;
+}
+
+@keyframes pointLeft {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .flag.github-link::after {
+    display: none;
+  }
+  
+  .castle-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flag {
+    width: 200px;
+    text-align: center;
+  }
 }
 
 /* Ending text */
@@ -347,12 +384,21 @@ p {
 }
 
 /* Image */
+
+.about-image {
+  max-width: 300px;
+  margin-left: auto;
+}
+
 .about-image img {
   width: 100%;
-  border-radius: 16px;
+  height: auto;
+  max-height: 420px;
   object-fit: cover;
+  border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
 
 @media (max-width: 900px) {
   .about-content {

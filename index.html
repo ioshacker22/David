@@ -3,7 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>David | Portfolio</title>
+  <title>David Adebambo | Software Developer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="David Adebambo - Computer Programming student at Seneca Polytechnic specializing in C/C++, Python, backend development, and system programming.">
+  <meta name="keywords" content="David Adebambo, Software Developer, Computer Programming, C++, Python, Backend Developer, Seneca Polytechnic">
+  <meta name="author" content="David Adebambo">
+  
+  <!-- Open Graph Meta Tags (for social sharing) -->
+  <meta property="og:title" content="David Adebambo | Software Developer Portfolio">
+  <meta property="og:description" content="Computer Programming student specializing in systems programming and backend development">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -17,8 +32,8 @@
   </ul>
 </nav>
   <section id="home" class="world world-1">
-    <h1>Hi there,</h1>
-    <p>Welcome to David's bubble.</p>
+    <h1>Hi there!</h1>
+    <p>Welcome to my bubble.</p>
     <div class="coin"></div>
   </section>
 <section id="about" class="about-section">
@@ -61,10 +76,11 @@
     </div>
 
     <div class="about-image">
-      <img src="assets/images/profile.jpg" alt="Profile photo" />
+      <img src="assets/David.jpeg" alt="Profile photo" />
     </div>
   </div>
 </section>
+
 <section id="experience" class="experience-section">
   <div class="experience-header">
     <h2><span class="slash">/</span> experience</h2>
@@ -78,7 +94,7 @@
     </div>
 
     <div class="experience-content">
-      <div class="job-panel active" data-company="rogers">
+      <div class="job-panel active" data-company="rogers" style="display: block;">
         <h3 class="job-title">Customer Service Manager @ <span class="company-name">Rogers / Fido</span></h3>
         <p class="job-date">Jan 2022 - Nov 2024</p>
         <ul class="job-details">
@@ -100,14 +116,13 @@
     </div>
   </div>
 </section>
+
 <section id="projects" class="projects-section">
-  <!-- Header -->
   <div class="section-header">
     <h2><span class="slash">/</span> pet projects</h2>
     <div class="divider"></div>
   </div>
 
-  <!-- Featured project -->
   <div class="featured-project">
     <div class="featured-overlay">
       <h3 class="project-title">2FA Authentication App</h3>
@@ -126,9 +141,24 @@
     </div>
   </div>
 
-  <!-- Project cards -->
-  <div class="project-grid">
+  <div class="featured-project">
+    <div class="featured-overlay">
+      <h3 class="project-title">VPN Application <span style="color: #f7c600; font-size: 0.7rem;">(Coming Soon)</span></h3>
+      <p class="project-desc">
+        A custom VPN solution featuring encrypted tunneling, secure connection protocols,
+        and user-friendly interface for private internet access and traffic routing.
+      </p>
+      <span class="project-tech">
+        PYTHON · NETWORKING · ENCRYPTION · SECURITY
+      </span>
 
+      <div class="project-links">
+        <a href="#" style="opacity: 0.5; cursor: not-allowed; pointer-events: none;">In Development</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-grid">
     <div class="project-card">
       <h4>Unix Shell (Custom Implementation)</h4>
       <p>
@@ -173,22 +203,20 @@
       </p>
       <span class="card-tech">C · C++ · Algorithms</span>
     </div>
-
   </div>
 </section>
- 
+
 <section class="world world-castle">
   <h2>Leaving so soon??</h2>
   <p>Stay a bit</p>
 
   <div class="castle-actions">
-    <a href="mailto: Davidadebambo22@gmail.com" class="flag">Contact Me</a>
-    <a href="https://github.com/ioshacker22" target="_blank" class="flag">View GitHub</a>
+    <a href="mailto:Davidadebambo22@gmail.com" class="flag">Contact Me</a>
+    <a href="https://github.com/ioshacker22" target="_blank" class="flag github-link">View GitHub</a>
   </div>
 
   <p class="end-text"></p>
 </section>
-
 
   <script src="js/main.js"></script>
 </body>

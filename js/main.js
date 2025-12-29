@@ -85,3 +85,69 @@ castle.addEventListener("mouseenter", () => {
     played = true;
   }
 });
+
+// Experience tab switching
+const companyTabs = document.querySelectorAll(".company-tab");
+const jobPanels = document.querySelectorAll(".job-panel");
+
+if (companyTabs.length > 0 && jobPanels.length > 0) {
+  companyTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const company = tab.dataset.company;
+      
+      // Remove active from all tabs and panels
+      companyTabs.forEach(t => t.classList.remove("active"));
+      jobPanels.forEach(p => {
+        p.style.display = "none";
+        p.classList.remove("active");
+      });
+      
+      // Add active to clicked tab and corresponding panel
+      tab.classList.add("active");
+      const activePanel = document.querySelector(`.job-panel[data-company="${company}"]`);
+      if (activePanel) {
+        activePanel.style.display = "block";
+        activePanel.classList.add("active");
+      }
+    });
+  });
+}
+
+// Smooth scroll for navigation links
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= (sectionTop - 100)) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});
