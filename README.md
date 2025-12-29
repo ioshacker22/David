@@ -2,70 +2,101 @@
   <img src="assets/hero.png" alt="Portfolio preview" width="100%">
 </p>
 
-David Adebambo
-I’m a Computer Programming student at Seneca Polytechnic with a focus on systems programming, backend development, and building things from the ground up.
+👋 About Me
+I'm a Computer Programming student at Seneca Polytechnic with a focus on systems programming, backend development, and building things from the ground up.
+This repository contains the source code for my personal website, designed as a game-inspired space to showcase my projects, experience, and how I think about software.
 
-This repository contains the source code for my personal website, designed as an game-inspired space to showcase my projects, experience, and how I think about software.
+🎮 About This Site
+The website is intentionally built with vanilla technologies:
 
-About this site
-The website is intentionally built with vanilla technologies.
+✅ No frameworks
+✅ No abstractions hiding the fundamentals
+✅ Clean, readable, and honest codebase
 
-No frameworks.
-No abstractions hiding the fundamentals.
+The goal was to create something memorable while keeping the codebase clean and maintainable.
 
-The goal was to create something memorable while keeping the codebase clean, readable, and honest.
+🛠️ Built With
 
-Built with
-HTML
+HTML - Semantic markup
+CSS - Custom styling and animations
+JavaScript - Interactive elements and smooth scrolling
 
-CSS
+All styling and interactions are written by hand to maintain full control over layout, behavior, and performance.
 
-JavaScript
+✨ Features
 
-Styling and interactions are written by hand to maintain full control over layout, behavior, and performance.
+🎮 Mario-inspired retro UI design
+🎯 Smooth scrolling navigation
+⚡ Animated interactive elements
+📱 Fully responsive (mobile & desktop)
+🔗 Project highlights with GitHub links
+💼 Experience timeline with tabbed navigation
+🎨 Custom pixel-art aesthetic
 
-Features
-Mario-inspired UI
 
-Smooth scrolling navigation
+📂 Projects Highlighted
+🔐 2FA Authentication App
+A production-ready two-factor authentication system featuring:
 
-Animated elements 
+Time-based one-time passwords (TOTP)
+QR code enrollment
+Secure token validation
+Docker deployment
 
-Project highlights with direct GitHub links
+View Project | Live Demo
+🔒 VPN Application (In Development)
+Custom VPN solution with encrypted tunneling and secure connection protocols.
 
-Experience timeline with tabbed navigation
+🚀 Running Locally
+bash# Clone the repository
+git clone https://github.com/ioshacker22/David.git
 
-Responsive layout for desktop and mobile
+# Navigate to project
+cd David
 
-Projects highlighted
-Some of the work showcased on the site includes:
-
-2FA Authentication App
-A two-factor authentication system with TOTP, QR enrollment, and secure token validation.
-
-VPN application (in development)
-
-Why this exists
-This site isn’t meant to be flashy for the sake of it.
-
-It exists to:
-
-show how I structure projects
-
-demonstrate my comfort with fundamentals
-
-reflect my curiosity and intentional design choices
-
-Running locally
-bash
-Copy code
-git clone https://github.com/ioshacker22/your-portfolio-repo.git
-cd your-portfolio-repo
+# Open in browser
 open index.html
-No setup required.
+No build process or dependencies required!
 
-Contact
+📁 Project Structure
+David/
+├── assets/
+│   └── images/        # Profile photos, icons
+│   
+├── css/
+│   └── style.css      # All styling
+├── js/
+│   └── main.js        # Interactive functionality
+└── index.html         # Main entry point
+
+🎯 Why This Exists
+This site isn't meant to be flashy for the sake of it. It exists to:
+✅ Demonstrate how I structure projects
+✅ Show my comfort with web fundamentals
+✅ Reflect curiosity and intentional design choices
+✅ Provide a memorable experience for visitors
+
+🌐 Live Site
+Visit: https://ioshacker22.github.io/David/
+
+📬 Contact
+
 Email: Davidadebambo22@gmail.com
+LinkedIn: www.linkedin.com/in/david-adebambo-8b2a41277
+GitHub: @ioshacker22
 
-GitHub: www.linkedin.com/in/david-adebambo-8b2a41277
 
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+
+Mario Bros theme inspiration from Nintendo
+Font: "Press Start 2P" from Google Fonts
+Hosted on GitHub Pages
+
+
+<div align="center">
+⭐ If you like this project, please consider giving it a star!
+Made with ❤️ by David Adebambo
+</div>
