@@ -58,16 +58,19 @@ cd David
 open index.html
 No build process or dependencies required!
 
-📁 Project Structure
+## 📁 Project Structure
+
+\`\`\`
 David/
 ├── assets/
 │   └── images/        # Profile photos, icons
-│   
+│  
 ├── css/
 │   └── style.css      # All styling
 ├── js/
 │   └── main.js        # Interactive functionality
 └── index.html         # Main entry point
+\`\`\`
 
 🎯 Why This Exists
 This site isn't meant to be flashy for the sake of it. It exists to:
